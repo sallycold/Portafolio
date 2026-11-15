@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brisa Toso | Técnica en Programación & Desarrolladora Web</title>
+    <!-- Enlace a la hoja de estilos separada -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente Inter desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="site-body">
+
+    <!-- Barra de Navegación Superior -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <!-- Logo / Nombre -->
+            <a href="#inicio" class="logo-brand">
+                <span class="logo-badge">BT</span>
+                <span>BRISA TOSO</span>
+            </a>
+
+            <!-- Enlaces de navegación (Escritorio) -->
+            <nav class="nav-links">
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                <a href="#formacion-habilidades" class="nav-link">Educación y Habilidades</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+            </nav>
+
+            <!-- Botones de Acción (Tema) -->
+            <div class="actions-container">
+                <button id="theme-toggle" type="button" aria-label="Cambiar tema" class="theme-btn">
+                    <!-- Icono Sol (Modo Claro) -->
+                    <svg id="sun-icon" class="theme-icon sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <!-- Icono Luna (Modo Oscuro) -->
+                    <svg id="moon-icon" class="theme-icon moon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+
+        <!-- SECCIÓN 1: HERO / PRESENTACIÓN -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-grid">
+                <div class="hero-info">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        Disponible para primera experiencia IT
+                    </div>
+                    <h1 class="hero-title">
+                        BRISA TOSO
+                    </h1>
+                    <p class="hero-subtitle">
+                        Técnica en Programación | Desarrolladora Web
+                    </p>
+
+                    <!-- Enlaces y datos de contacto -->
+                    <div class="contact-list">
+                        <!-- LinkedIn -->
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg class="icon-svg" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                            </span>
+                            <div>
+                                <span class="contact-label">LinkedIn:</span>
+                                <a href="https://www.linkedin.com/search/results/all/?keywords=Brisa%20Toso" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    Brisa Toso
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CV -->
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            </span>
+                            <div class="break-all">
+                                <span class="contact-label">CV:</span>
+                                <a href="https://github.com/sallycold/Portafolio/blob/main/CV.pdf" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                    Ver CV en GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Correo -->
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </span>
+                            <div>
+                                <span class="contact-label">Correo:</span>
+                                <a href="mailto:tosobrisa4@gmail.com" class="contact-link">
+                                    tosobrisa4@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar / Tarjeta visual minimalista -->
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-gradient-border">
+                        <div class="avatar-inner">
+                            <span class="avatar-text">BT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: SOBRE MÍ -->
+        <section id="sobre-mi" class="about-section">
+            <h2 class="section-tag">Sobre mí</h2>
+            <p class="about-card">
+                "Soy estudiante de la Tecnicatura en Programación en la Escuela Manuel Sadosky, de Lomas de Zamora. Me gusta el desarrollo web y disfruto crear proyectos funcionales y ordenados. Busco mi primera experiencia en IT donde pueda aplicar lo aprendido en mis proyectos académicos y seguir capacitándome."
+            </p>
+        </section>
+
+        <!-- SECCIÓN 3: EDUCACIÓN Y HABILIDADES TÉCNICAS -->
+        <section id="formacion-habilidades" class="grid-two-cols">
+            <!-- Columna Izquierda: EDUCACIÓN -->
+            <div class="card education-card">
+                <div>
+                    <div class="card-header-flex">
+                        <div class="card-icon-box">
+                            <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                        </div>
+                        <h2 class="card-title">Educación</h2>
+                    </div>
+
+                    <div class="timeline-box">
+                        <span class="timeline-dot"></span>
+                        <span class="badge-year">2019 - 2026</span>
+                        <h3 class="timeline-school">ESCUELA: Manuel Sadosky - Lomas de Zamora</h3>
+                        <p class="timeline-degree">Título: Técnico en Programación - Egresada 2026</p>
+                        <p class="timeline-desc">Formación orientada al desarrollo de software, lógica de programación, estructuras de datos, arquitectura web y gestión de bases de datos relacionales.</p>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <span>Buenos Aires, Argentina</span>
+                    <span class="footer-highlight">Nivel Técnico Secundario</span>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: HABILIDADES TÉCNICAS -->
+            <div class="card skills-card">
+                <div class="card-header-flex">
+                    <div class="card-icon-box">
+                        <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h2 class="card-title">Habilidades Técnicas</h2>
+                </div>
+
+                <div class="skills-content">
+                    <div>
+                        <h3 class="skill-group-title">
+                            <span class="bullet-dot"></span> Desarrollo Web
+                        </h3>
+                        <div class="skill-subgroup">
+                            <div>
+                                <span class="skill-label">Frontend:</span>
+                                <div class="tags-container">
+                                    <span class="tag tag-orange">HTML</span>
+                                    <span class="tag tag-orange">CSS</span>
+                                    <span class="tag tag-orange">JavaScript</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="skill-label">Backend:</span>
+                                <div class="tags-container">
+                                    <span class="tag tag-emerald">C#</span>
+                                    <span class="tag tag-emerald">Node.js</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="skill-label">Base de Datos:</span>
+                                <div class="tags-container">
+                                    <span class="tag tag-red">SQL Server</span>
+                                    <span class="tag tag-sky">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="skill-group-title">
+                            <span class="bullet-dot"></span> Herramientas
+                        </h3>
+                        <div class="tags-container pl-tags">
+                            <span class="tag tag-neutral">Excel</span>
+                            <span class="tag tag-neutral">Canva</span>
+                            <span class="tag tag-neutral">Figma</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="skill-group-title">
+                            <span class="bullet-dot"></span> Inteligencia Artificial
+                        </h3>
+                        <p class="text-sm text-stone-600 dark:text-zinc-300 pl-3 leading-relaxed">
+                            Uso de IA generativa (<span class="font-semibold text-stone-800 dark:text-white">ChatGPT, Gemini, Claude.ia</span>) como apoyo para desarrollo y debugging de código.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- SECCIÓN 4: PROYECTOS -->
+        <section id="proyectos" class="projects-section">
+            <div class="projects-header-wrapper">
+                <div>
+                    <h2 class="section-main-title">Proyectos</h2>
+                    <p class="section-subtitle">Desarrollo académico y funcional destacado</p>
+                </div>
+            </div>
+
+            <!-- ========================================================= -->
+            <!-- PROYECTO 1: ECCOMMERCE-KIOSCO                             -->
+            <!-- ========================================================= -->
+            <article class="card project-card">
+                <div class="project-grid">
+                    
+                    <!-- Información del proyecto -->
+                    <div class="project-info">
+                        <div class="badge badge-purple">
+                            Full Stack Web App
+                        </div>
+
+                        <h3 class="project-title">
+                            ECCOMMERCE-KIOSCO
+                        </h3>
+
+                        <p class="project-desc">
+                            <strong class="strong-text">Descripción:</strong> Sistema de gestión de usuarios y productos con autenticación, control de stock, carrito de compras y generación de facturas en formato PDF.
+                        </p>
+
+                        <!-- Tecnologías -->
+                        <div>
+                            <span class="tech-category-title">Tecnologías:</span>
+                            <div class="tags-container">
+                                <span class="tag tag-neutral">HTML</span>
+                                <span class="tag tag-neutral">CSS</span>
+                                <span class="tag tag-neutral">JavaScript</span>
+                                <span class="tag tag-neutral">Node.js</span>
+                                <span class="tag tag-neutral">MySQL</span>
+                            </div>
+                        </div>
+
+                        <!-- Enlace al Repositorio -->
+                        <div class="repo-box">
+                            <a href="https://github.com/sallycold/Eco-Commerce" target="_blank" rel="noopener noreferrer" class="btn-primary btn-violet">
+                                <svg class="icon-svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                Ver Código en GitHub
+                            </a>
+                            <p class="repo-url">
+                                https://github.com/sallycold/Eco-Commerce
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Vista Previa Interactiva Tienda -->
+                    <div class="preview-wrapper">
+                        <div class="preview-header-bar">
+                            <span class="preview-label">Vista Previa Interactiva Mini Mundo</span>
+                            <div class="tabs-group">
+                                <button onclick="switchDemoTab('tienda')" id="tab-tienda" class="tab-btn active-tab">Tienda</button>
+                                <button onclick="switchDemoTab('ticket')" id="tab-ticket" class="tab-btn">ABM Producto</button>
+                                <button onclick="switchDemoTab('login')" id="tab-login" class="tab-btn">Login / Registro</button>
+                            </div>
+                        </div>
+
+                        <div class="browser-frame">
+                            <div class="browser-top">
+                                <div class="browser-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="browser-url-text">mini-mundo-kiosco / preview</span>
+                                <span class="browser-spacer"></span>
+                            </div>
+
+                            <div id="demo-view-tienda" class="browser-view block">
+                                <img src="Tienda.png" alt="Catálogo Tienda Mini Mundo" class="preview-img">
+                            </div>
+                            <div id="demo-view-ticket" class="browser-view hidden">
+                                <img src="ABM_Product_Tienda.png" alt="Comprobante de compra PDF" class="preview-img">
+                            </div>
+                            <div id="demo-view-login" class="browser-view hidden">
+                                <img src="Login_tienda.png" alt="Inicio de sesión y registro" class="preview-img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+<!-- ========================================================= -->
+            <!-- PROYECTO 3: PAGINA MUNDIAL DE FUTBOL ("HISTORIAL - FIFA") -->
+            <!-- ========================================================= -->
+            <article class="card project-card">
+                <div class="project-grid">
+                    
+                    <!-- Información del proyecto -->
+                    <div class="project-info">
+                        <div class="badge badge-amber">
+                            Web Informativa & Bootstrap
+                        </div>
+
+                        <h3 class="project-title">
+                            PAGINA MUNDIAL DE FUTBOL
+                        </h3>
+
+                        <div class="project-desc list-container">
+                            <p class="strong-text">Descripción:</p>
+                            <ul class="custom-list">
+                                <li><strong class="strong-text">Sección histórica:</strong> Carrusel de imágenes interactivo.</li>
+                                <li><strong class="strong-text">Sedes mundiales:</strong> Tabla informativa acompañada de una columna lateral de imágenes y link que lleva a módulos amarillos de los ganadores de ese año.</li>
+                                <li><strong class="strong-text">Premios individuales:</strong> Módulos destacados para mostrar a los ganadores del Balón de Oro, Mejor Arquero y Jugador Joven.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Tecnologías -->
+                        <div>
+                            <span class="tech-category-title">Tecnologías:</span>
+                            <div class="tags-container">
+                                <span class="tag tag-neutral">HTML</span>
+                                <span class="tag tag-neutral">CSS</span>
+                                <span class="tag tag-neutral">Bootstrap</span>
+                            </div>
+                        </div>
+
+                        <!-- Enlace al Repositorio -->
+                        <div class="repo-box">
+                            <a href="https://github.com/sallycold/Historial-mundial-futbol" target="_blank" rel="noopener noreferrer" class="btn-primary btn-amber">
+                                <svg class="icon-svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                Ver Código en GitHub
+                            </a>
+                            <p class="repo-url">
+                                https://github.com/sallycold/Historial-mundial-futbol
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Vista Previa / Banner Informativo Mundial -->
+                    <div class="preview-wrapper">
+                        <div class="preview-header-bar">
+                            <span class="preview-label">Vista Previa Historial del Mundial</span>
+                            <div class="tabs-group">
+                                <button onclick="switchFifaTab('historial')" id="fifa-tab-historial" class="tab-btn active-tab">Historial</button>
+                                <button onclick="switchFifaTab('sedes')" id="fifa-tab-sedes" class="tab-btn">Sedes</button>
+                                <button onclick="switchFifaTab('ganadores')" id="fifa-tab-ganadores" class="tab-btn">Módulo Amarillo</button>
+                            </div>
+                        </div>
+
+                        <div class="browser-frame browser-light-override">
+                            <div class="browser-top">
+                                <div class="browser-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="browser-url-text">historial-mundial / preview</span>
+                                <span class="browser-spacer"></span>
+                            </div>
+
+                            <div id="fifa-view-historial" class="browser-view block">
+                                <img src="mund_cabecera.png" alt="Cabecera Mundial" class="preview-img">
+                            </div>
+                            <div id="fifa-view-sedes" class="browser-view hidden">
+                                
+                                <img src="mundi_sedes.png" alt="Sedes del Mundial" class="preview-img">
+                                <img src="mund_premios.png" alt="Premios del Mundial" class="preview-img">
+                            </div>
+                            <div id="fifa-view-ganadores" class="browser-view hidden">
+                                <img src="mund_ modul_amarillo.png" alt="Módulo Amarillo" class="preview-img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+ 
+        </section>
+        <!-- Pie de Página -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p><strong class="footer-strong">Brisa Toso</strong>. Técnica en Programación.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/search/results/all/?keywords=Brisa%20Toso" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                <a href="https://github.com/sallycold" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                <a href="https://github.com/sallycold/Portafolio/blob/main/CV.pdf" target="_blank" rel="noopener noreferrer" class="footer-link">CV (PDF)</a>
+            </div>
+        </div>
+    </footer>
+
+  
+     <script>
+        // 1. Control de Modo Claro / Oscuro
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            localStorage.setItem('theme', htmlElement.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Función genérica para cambiar pestañas de cualquier proyecto
+        function switchProjectTabs(views, viewPrefix, tabPrefix, activeTab) {
+            views.forEach(view => {
+                const viewEl = document.getElementById(`${viewPrefix}-${view}`);
+                const tabEl = document.getElementById(`${tabPrefix}-${view}`);
+                if (!viewEl || !tabEl) return;
+
+                if (view === activeTab) {
+                    viewEl.classList.remove('hidden');
+                    viewEl.classList.add('block');
+                    tabEl.classList.add('bg-white', 'dark:bg-zinc-700', 'text-stone-900', 'dark:text-white', 'shadow-xs');
+                    tabEl.classList.remove('text-stone-600', 'dark:text-zinc-400');
+                } else {
+                    viewEl.classList.add('hidden');
+                    viewEl.classList.remove('block');
+                    tabEl.classList.remove('bg-white', 'dark:bg-zinc-700', 'text-stone-900', 'dark:text-white', 'shadow-xs');
+                    tabEl.classList.add('text-stone-600', 'dark:text-zinc-400');
+                }
+            });
+        }
+
+        // 2. Pestañas Proyecto 1: ECCOMMERCE-KIOSCO (Mini Mundo)
+        function switchDemoTab(tabName) {
+            switchProjectTabs(['tienda', 'ticket', 'login'], 'demo-view', 'tab', tabName);
+        }
+
+        // 3. Pestañas Proyecto 2: Página Web Escolar (E.E.S.T. N° 7)
+        function switchSchoolTab(tabName) {
+            switchProjectTabs(['inicio', 'institucional', 'curricular'], 'school-view', 'school-tab', tabName);
+        }
+
+        // 4. Pestañas Proyecto 3: Página Mundial de Fútbol (FIFA)
+        function switchFifaTab(tabName) {
+            switchProjectTabs(['historial', 'sedes', 'ganadores'], 'fifa-view', 'fifa-tab', tabName);
+        }
+
+        // 5. Control del Modal de Contacto
+        const contactModal = document.getElementById('contact-modal');
+
+        function openContactModal() {
+            contactModal.classList.remove('hidden');
+            contactModal.classList.add('flex');
+        }
+
+        function closeContactModal() {
+            contactModal.classList.add('hidden');
+            contactModal.classList.remove('flex');
+            document.getElementById('form-status').classList.add('hidden');
+        }
+
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const statusEl = document.getElementById('form-status');
+            statusEl.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                closeContactModal();
+            }, 2000);
+        }
+
+        contactModal.addEventListener('click', (e) => {
+            if (e.target === contactModal) {
+                closeContactModal();
+            }
+        });
+    </script>
+</body>
+</html>
